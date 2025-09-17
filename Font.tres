@@ -1,0 +1,11 @@
+[gd_resource type="FontVariation" load_steps=2 format=3 uid="uid://cye3r0lq8t1tp"]
+
+[ext_resource type="FontFile" uid="uid://b1tlenmao338p" path="res://MonaspaceKryptonVarVF[wght,wdth,slnt].ttf" id="1_kvl7f"]
+
+[resource]
+base_font = ExtResource("1_kvl7f")
+variation_opentype = {
+1936486004: 0,
+2003072104: 100,
+2003265652: 400
+}

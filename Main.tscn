@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://di87ih6ycs0lx"]
+
+[ext_resource type="Script" uid="uid://sotdaadx8waf" path="res://Main.gd" id="1_uu6xs"]
+[ext_resource type="PackedScene" uid="uid://bbnv5644e2aku" path="res://Ball.tscn" id="2_uu6xs"]
+
+[sub_resource type="Curve" id="Curve_uu6xs"]
+_limits = [1.0, 100.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 34.941154, 0, 0, Vector2(0.4247312, 12.709671), 0.0, 0.0, 0, 0, Vector2(0.844086, 53.161285), 252.00005, 252.00005, 0, 0, Vector2(1, 100), 4.5776364e-05, 0.0, 0, 0]
+point_count = 4
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_uu6xs")
+mass_curve = SubResource("Curve_uu6xs")
+
+[node name="Camera" type="Camera2D" parent="."]
+
+[node name="Ball" parent="." instance=ExtResource("2_uu6xs")]
+z_index = -62
+mass = 2000.0
+color = Color(1, 1, 1, 0.25)
+fixed = true
+can_collide = false
+label = "s01"
