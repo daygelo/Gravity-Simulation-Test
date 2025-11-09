@@ -15,9 +15,10 @@ mass_curve = SubResource("Curve_uu6xs")
 [node name="Camera" type="Camera2D" parent="."]
 
 [node name="Ball" parent="." instance=ExtResource("2_uu6xs")]
-z_index = -62
+z_index = -78
 mass = 2000.0
 color = Color(1, 1, 1, 0.25)
+enabled = null
 fixed = true
 can_collide = false
 label = "s01"

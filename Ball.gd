@@ -8,6 +8,7 @@ const GRAVITIONAL_CONSTANT := 1000.0
 @export var mass := 1.0
 @export var color := Color.WHITE
 @export var filled := false
+@export var enabled := true
 @export var fixed := false
 @export var can_collide := true
 @export var label := "ball"
@@ -47,7 +48,7 @@ func _process(delta: float) -> void:
 		return
 	
 	for ball in ALL_BALLS:
-		if ball == self: continue
+		if ball == self or !ball.enabled: continue
 		
 		var relative_position := ball.position - position
 		

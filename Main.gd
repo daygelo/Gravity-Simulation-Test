@@ -20,3 +20,7 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	$Ball.position = get_local_mouse_position()
+	
+	if Input.is_action_just_pressed("Toggle Ball"):
+		$Ball.enabled = !$Ball.enabled
+		$Ball.visible = $Ball.enabled
